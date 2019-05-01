@@ -1,0 +1,186 @@
+#root {
+  background: white;
+  height: 92%;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  height: 100%;
+  /* width: 95%; */
+  margin: auto;
+  position: relative;
+}
+.masonaryParent {
+  display: flex;
+  padding: 15px;
+  background: #e9e9e9;
+  align-items: flex-start;
+  justify-content: center;
+}
+.loadingMasonary {
+  position: relative;
+  top: 50px;
+}
+.eachDiv {
+  border-radius: 3px;
+}
+.columnDiv {
+  display: inline-block;
+}
+.header {
+  height: 50px;
+  background: #a5d6a7;
+  line-height: 50px;
+  font-size: xx-large;
+  text-align: left;
+  padding-left: 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+.buttonHeader {
+  float: right;
+  margin-top: 11px;
+  margin-right: 20px;
+  width: 85px;
+  display: inline-block;
+  height: 30px;
+  border: 1px solid #212121;
+  background: transparent;
+  cursor: pointer;
+  line-height: 0;
+  font-size: 20px;
+}
+.buttonHeader:hover {
+  background: #e9e9e9;
+}
+.loginButton {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.login {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.error {
+  color: #b71c1c;
+  font-size: 15px;
+  height: 20px;
+}
+.MainDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.checkbox {
+  height: 30px;
+  margin-top: 9px;
+}
+.checkboxes {
+  display: flex;
+  justify-content: space-evenly;
+}
+.checkbox input[type="checkbox"] {
+  /* display: none;
+visibility: hidden; */
+  opacity: 0;
+  /* position: absolute;
+left: -9999px; */
+}
+.checkbox label::before {
+  content: "";
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  border: 1px solid;
+}
+.checkbox label::after {
+  content: "";
+  display: inline-block;
+  height: 6px;
+  width: 9px;
+  border-left: 2px solid;
+  border-bottom: 2px solid;
+  transform: rotate(-45deg);
+}
+.checkbox label {
+  position: relative;
+}
+.checkbox label::before,
+.checkbox label::after {
+  position: absolute;
+}
+/*Outer-box*/
+.checkbox label::before {
+  top: 3px;
+  left: -20px;
+}
+/*Checkmark*/
+.checkbox label::after {
+  left: -16px;
+  top: 7px;
+}
+.checkbox input[type="checkbox"] + label::after {
+  content: none;
+}
+/*Unhide the checkmark on the checked state*/
+.checkbox input[type="checkbox"]:checked + label::after {
+  content: "";
+}
+/*Adding focus styles on the outer-box of the fake checkbox*/
+.checkbox input[type="checkbox"]:focus + label::before {
+  outline: rgb(59, 153, 252) auto 5px;
+}
+.title {
+  height: 25px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  line-height: 25px;
+  font-size: 15px;
+}
+.SingleImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0px 15px;
+  position: relative;
+  top: 50px;
+}
+.labels {
+  font-weight: bold;
+}
+.outer {
+  height: 100%;
+  /* paddin/g: 15px 0px 15px 15px; */
+}
+.errorPage {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.backButton {
+  width: 100px;
+  margin-left: 20px;
+  padding-top: 0px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid black;
+  margin-top: 10px;
+  cursor: pointer;
+  position: fixed;
+  top: 50px;
+  z-index: 999;
+  background: white;
+}
+.backButton:hover {
+  background: lightgrey;
+}
